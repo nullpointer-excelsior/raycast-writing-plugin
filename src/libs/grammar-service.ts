@@ -1,6 +1,6 @@
 import OpenAI from "openai";
 
-const MODEL = "gpt-4.1-nano";
+const MODEL = "gpt-6-luna";
 
 const PROMPT = "Correct the grammar and spelling of the text in the input language.";
 
