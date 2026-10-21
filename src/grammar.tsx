@@ -24,6 +24,10 @@ export default function Command() {
     }
   }
 
+  if (isLoading) {
+    return <Detail isLoading navigationTitle="Correcting" markdown="" />;
+  }
+
   if (correctedText) {
     return (
       <Detail
@@ -46,7 +50,6 @@ export default function Command() {
 
   return (
     <Form
-      isLoading={isLoading}
       actions={
         <ActionPanel>
           <Action.SubmitForm onSubmit={handleSubmit} />

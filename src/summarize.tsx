@@ -31,6 +31,10 @@ export default function Command() {
     }
   }
 
+  if (isLoading) {
+    return <Detail isLoading navigationTitle="Summarizing" markdown="" />;
+  }
+
   if (summary) {
     return (
       <Detail
@@ -53,7 +57,6 @@ export default function Command() {
 
   return (
     <Form
-      isLoading={isLoading}
       actions={
         <ActionPanel>
           <Action.SubmitForm onSubmit={handleSubmit} />
