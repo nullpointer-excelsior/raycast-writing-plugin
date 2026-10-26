@@ -41,6 +41,13 @@
       "subtitle": "Convert text to Markdown",
       "description": "Convert text into Markdown with headings, emojis, lists and tables",
       "mode": "view"
+    },
+    {
+      "name": "ask",
+      "title": "ask",
+      "subtitle": "Ask a question about text",
+      "description": "Ask a question about the provided text",
+      "mode": "view"
     }
   ],
   "dependencies": {
